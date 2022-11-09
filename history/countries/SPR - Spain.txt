@@ -1,0 +1,11 @@
+capital = 41
+
+set_cosmetic_tag = SPR_kingdom
+set_dictatorship = yes
+
+NGA = {	set_country_flag = protectorate_flag	}
+
+set_autonomy = {	target = SEN	autonomous_state = colony	}
+set_autonomy = {	target = WES	autonomous_state = colony	}
+
+set_autonomy = {	target = NGA	autonomous_state = colony_and_protectorate	}

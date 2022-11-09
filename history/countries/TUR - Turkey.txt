@@ -1,0 +1,4 @@
+capital = 49
+
+set_cosmetic_tag = TUR_republic
+set_dictatorship = yes

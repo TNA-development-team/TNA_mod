@@ -1,0 +1,4 @@
+capital = 454
+
+set_cosmetic_tag = JRS_international_special_administrative_region
+set_dictatorship = yes

@@ -1,0 +1,4 @@
+capital = 276
+
+set_cosmetic_tag = CAN_GBRbyENG
+set_dictatorship = yes

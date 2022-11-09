@@ -1,0 +1,4 @@
+capital = 306
+
+set_cosmetic_tag = COL_republic
+set_dictatorship = yes

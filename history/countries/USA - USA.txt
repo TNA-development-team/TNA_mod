@@ -1,0 +1,4 @@
+capital = 361
+
+set_cosmetic_tag = AMERICA_united_states_48
+set_dictatorship = yes

@@ -1,0 +1,4 @@
+capital = 692
+
+set_cosmetic_tag = WIN_federation
+set_dictatorship = yes

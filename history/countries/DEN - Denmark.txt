@@ -1,0 +1,9 @@
+capital = 37
+
+set_cosmetic_tag = DEN_kingdom
+set_dictatorship = yes
+
+set_autonomy = {	target = GYA	autonomous_state = colony	}
+set_autonomy = {	target = SUD	autonomous_state = colony	}
+
+set_autonomy = {	target = ICE	autonomous_state = overseas_territory	}

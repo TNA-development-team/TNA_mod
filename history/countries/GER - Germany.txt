@@ -1,0 +1,12 @@
+capital = 64
+
+set_cosmetic_tag = GER_reich
+set_dictatorship = yes
+
+set_autonomy = {	target = CMR	autonomous_state = protected_territory	}
+set_autonomy = {	target = KIR	autonomous_state = protected_territory	}
+set_autonomy = {	target = NMB	autonomous_state = protected_territory	}
+set_autonomy = {	target = SAM	autonomous_state = protected_territory	}
+set_autonomy = {	target = TAN	autonomous_state = protected_territory	}
+
+set_autonomy = {	target = TVL	autonomous_state = condominium	}

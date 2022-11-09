@@ -1,0 +1,21 @@
+state = {
+	id = 914
+	name = "STATE_914"
+	manpower = 198000
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = RIF
+		add_core_of = RIF
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces = {
+		13262
+	}
+	local_supplies = 0.0
+}

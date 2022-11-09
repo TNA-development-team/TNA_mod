@@ -1,0 +1,4 @@
+capital = 776
+
+set_cosmetic_tag = COUNTRY_POL
+set_dictatorship = yes

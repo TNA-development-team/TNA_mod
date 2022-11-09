@@ -1,0 +1,11 @@
+capital = 7
+
+set_cosmetic_tag = NTL_kingdom
+set_dictatorship = yes
+
+WAF = {	set_country_flag = federal_flag	}
+
+set_autonomy = {	target = INS	autonomous_state = colony	}
+set_autonomy = {	target = SUR	autonomous_state = colony	}
+
+set_autonomy = {	target = WAF	autonomous_state = colonies_federation	}

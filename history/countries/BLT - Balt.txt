@@ -1,0 +1,4 @@
+capital = 808
+
+set_cosmetic_tag = ESTandLAT_union
+set_dictatorship = yes

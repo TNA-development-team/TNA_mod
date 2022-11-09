@@ -1,0 +1,4 @@
+capital = 85
+
+set_cosmetic_tag = DNZ_free_city
+set_dictatorship = yes

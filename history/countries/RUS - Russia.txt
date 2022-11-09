@@ -1,0 +1,11 @@
+capital = 219
+
+set_cosmetic_tag = RUS_empire
+set_dictatorship = yes
+
+CCS = {	set_country_flag = viceroyalty_flag	}
+
+set_autonomy = {	target = CCS	autonomous_state = viceroyalty	}
+
+set_autonomy = {	target = KAZ	autonomous_state = overseas_territory	}
+set_autonomy = {	target = TRK	autonomous_state = overseas_territory	}

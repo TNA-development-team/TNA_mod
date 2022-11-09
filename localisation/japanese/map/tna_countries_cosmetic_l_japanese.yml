@@ -1,0 +1,75 @@
+﻿l_japanese:
+##国名
+#アジア
+ GREATERJAPAN_empire:0 "大日本帝国"
+ GREATERJAPAN_empire_DEF:0 "大日本帝国"
+ GREATERJAPAN_empire_ADJ:0 "日本"
+ 
+ GREATMANCHURIA_empire:0 "大満州帝国"
+ GREATMANCHURIA_empire_DEF:0 "大満州帝国"
+ GREATMANCHURIA_empire_ADJ:0 "満州"
+ 
+ GREATMONGOLIA_state:0 "大モンゴル国"
+ GREATMONGOLIA_state_DEF:0 "大モンゴル国"
+ GREATMONGOLIA_state_ADJ:0 "大モンゴル"
+ 
+ IRAN_sublime_state:0 "崇高なるイラン国"
+ IRAN_sublime_state_DEF:0 "崇高なるイラン国"
+ IRAN_sublime_state_ADJ:0 "イラン"
+ 
+ MALAY_federated_states:0 "マレー連邦"
+ MALAY_federated_states_DEF:0 "マレー連邦"
+ MALAY_federated_states_ADJ:0 "マレー"
+ 
+ SAUDIARABIA_kingdom:0 "サウジアラビア王国"
+ SAUDIARABIA_kingdom_DEF:0 "サウジアラビア王国"
+ SAUDIARABIA_kingdom_ADJ:0 "サウジアラビア"
+ 
+ SOUTHARABIA_federation:0 "南アラビア連邦"
+ SOUTHARABIA_federation_DEF:0 "南アラビア連邦"
+ SOUTHARABIA_federation_ADJ:0 "南アラビア"
+ 
+#アフリカ
+ AUSSA_sultanate:0 "オーッサ・スルタン国"
+ AUSSA_sultanate_DEF:0 "オーッサ・スルタン国"
+ AUSSA_sultanate_ADJ:0 "オーッサ・"
+ 
+ BECHUANALAND_kingdom:0 "ベチュアナランド王国"
+ BECHUANALAND_kingdom_DEF:0 "ベチュアナランド王国"
+ BECHUANALAND_kingdom_ADJ:0 "ベチュアナランド"
+ 
+#新大陸
+ AMERICA_united_states_48:0 "アメリカ合衆国"
+ AMERICA_united_states_48_DEF:0 "アメリカ合衆国"
+ AMERICA_united_states_48_ADJ:0 "アメリカ"
+ 
+##連合国家
+#アジア
+ MSCandOMA_sultanate:0 "マスカット及びオマーン・スルタン国"
+ MSCandOMA_sultanate_DEF:0 "マスカット及びオマーン・スルタン国"
+ MSCandOMA_sultanate_ADJ:0 "マスカット・オマーン"
+ 
+#ヨーロッパ
+ CZECHSLOVAKIA_republic:0 "チェコスロバキア共和国"
+ CZECHSLOVAKIA_republic_DEF:0 "チェコスロバキア共和国"
+ CZECHSLOVAKIA_republic_ADJ:0 "チェコスロバキア"
+ 
+ DJI-CYP_grand_duchy:0 "ジブチ＝キプロス大公国"
+ DJI-CYP_grand_duchy_DEF:0 "ジブチ＝キプロス大公国"
+ DJI-CYP_grand_duchy_ADJ:0 "キプロス"
+ 
+ ESTandLAT_union:0 "エストニア及びラトビア連合"
+ ESTandLAT_union_DEF:0 "エストニア及びラトビア連合"
+ ESTandLAT_union_ADJ:0 "エストニア・ラトビア"
+ 
+ GBRbyENG_united_kingdom:0 "グレートブリテン連合王国"
+ GBRbyENG_united_kingdom_DEF:0 "グレートブリテン連合王国"
+ GBRbyENG_united_kingdom_ADJ:0 "イギリス"
+ 
+ ITAbySRD_kingdom:0 "イタリア王国"
+ ITAbySRD_kingdom_DEF:0 "イタリア王国"
+ ITAbySRD_kingdom_ADJ:0 "イタリア"
+ 
+ SOUTHNEDERLAND_kingdom:0 "南ネーデルラント王国"
+ SOUTHNEDERLAND_kingdom_DEF:0 "南ネーデルラント王国"
+ SOUTHNEDERLAND_kingdom_ADJ:0 "南ネーデルラント"

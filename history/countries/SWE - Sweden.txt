@@ -1,0 +1,9 @@
+capital = 141
+
+set_cosmetic_tag = SWE_kingdom
+set_dictatorship = yes
+
+INC = {	set_country_flag = federal_flag	}
+
+set_autonomy = {	target = TOG	autonomous_state = colony	}
+set_autonomy = {	target = INC	autonomous_state = colonies_federation	}

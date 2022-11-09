@@ -1,0 +1,7 @@
+capital = 107
+
+set_cosmetic_tag = YUG_kingdom
+set_dictatorship = yes
+
+set_autonomy = {	target = BLZ	autonomous_state = colony	}
+set_autonomy = {	target = GNA	autonomous_state = colony	}

@@ -1,0 +1,63 @@
+﻿l_japanese:
+#急進革命主義
+ radical_revolutionism:0 "急進革命主義"
+ radical_revolutionism_noun:0 "急進革命主義"
+ radical_revolutionism_desc:0 "革命政権"
+ radical_revolutionism_drift:0 "日毎の急進革命主義への支援"
+ radical_revolutionism_acceptance:0 "急進革命主義者との外交の容認"
+ radical_revolutionism_ideology:0 "急進革命主義"
+ radical_revolutionism_ideology_desc:0 ""
+ 
+#全体主義左派
+ leftist_totalitarianism:0 "全体主義左派"
+ leftist_totalitarianism_noun:0 "全体主義左派"
+ leftist_totalitarianism_desc:0 "全体主義政権"
+ leftist_totalitarianism_drift:0 "日毎の全体主義左派への支援"
+ leftist_totalitarianism_acceptance:0 "全体主義左派との外交の容認"
+ leftist_totalitarianism_ideology:0 "全体主義左派"
+ leftist_totalitarianism_ideology_desc:0 ""
+
+#民主主義左派
+ leftist_democracy:0 "民主主義左派"
+ leftist_democracy_noun:0 "民主主義左派"
+ leftist_democracy_desc:0 "民主主義政権"
+ leftist_democracy_drift:0 "日毎の民主主義左派への支援"
+ leftist_democracy_acceptance:0 "民主主義左派との外交の容認"
+ leftist_democracy_ideology:0 "民主主義左派"
+ leftist_democracy_ideology_desc:0 ""
+ 
+#民主主義中道
+ centrist_democracy:0 "民主主義中道"
+ centrist_democracy_noun:0 "民主主義中道"
+ centrist_democracy_desc:0 "民主主義政権"
+ centrist_democracy_drift:0 "日毎の民主主義中道への支援"
+ centrist_democracy_acceptance:0 "民主主義中道との外交の容認"
+ centrist_democracy_ideology:0 "民主主義中道"
+ centrist_democracy_ideology_desc:0 ""
+ 
+#民主主義右派
+ rightist_democracy:0 "民主主義右派"
+ rightist_democracy_noun:0 "民主主義右派"
+ rightist_democracy_desc:0 "民主主義政権"
+ rightist_democracy_drift:0 "日毎の民主主義右派への支援"
+ rightist_democracy_acceptance:0 "民主主義右派との外交の容認"
+ rightist_democracy_ideology:0 "民主主義右派"
+ rightist_democracy_ideology_desc:0 ""
+ 
+#全体主義右派
+ rightist_totalitarianism:0 "全体主義右派"
+ rightist_totalitarianism_noun:0 "全体主義右派"
+ rightist_totalitarianism_desc:0 "全体主義政権"
+ rightist_totalitarianism_drift:0 "日毎の全体主義右派への支援"
+ rightist_totalitarianism_acceptance:0 "全体主義右派との外交の容認"
+ rightist_totalitarianism_ideology:0 "全体主義右派"
+ rightist_totalitarianism_ideology_desc:0 ""
+ 
+#権威反動主義
+ authoritarian_reactionism:0 "権威反動主義"
+ authoritarian_reactionism_noun:0 "権威反動主義"
+ authoritarian_reactionism_desc:0 "反動政権"
+ authoritarian_reactionism_drift:0 "日毎の権威反動主義への支援"
+ authoritarian_reactionism_acceptance:0 "権威反動主義者との外交の容認"
+ authoritarian_reactionism_ideology:0 "権威反動主義"
+ authoritarian_reactionism_ideology_desc:0 ""

@@ -1,0 +1,18 @@
+capital = 126
+
+set_cosmetic_tag = GBRbyENG_united_kingdom
+set_dictatorship = yes
+
+set_autonomy = {	target = AST	autonomous_state = dominion	}
+set_autonomy = {	target = CAN	autonomous_state = dominion	}
+set_autonomy = {	target = NZL	autonomous_state = dominion	}
+set_autonomy = {	target = SAF	autonomous_state = dominion	}
+
+set_autonomy = {	target = BHU	autonomous_state = protected_state	}
+set_autonomy = {	target = EGY	autonomous_state = protected_state	}
+set_autonomy = {	target = NEP	autonomous_state = protected_state	}
+set_autonomy = {	target = SKM	autonomous_state = protected_state	}
+
+set_autonomy = {	target = IND	autonomous_state = junior_partner_colony	}
+
+set_autonomy = {	target = FSM	autonomous_state = colony	}

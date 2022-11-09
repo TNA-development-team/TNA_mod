@@ -1,0 +1,6 @@
+capital = 6
+
+set_cosmetic_tag = SOUTHNEDERLAND_kingdom
+set_dictatorship = yes
+
+set_autonomy = {	target = COG	autonomous_state = colony	}

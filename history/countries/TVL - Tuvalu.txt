@@ -1,0 +1,4 @@
+capital = 643
+
+set_cosmetic_tag = COUNTRY_GERandFRA
+set_dictatorship = yes

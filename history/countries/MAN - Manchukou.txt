@@ -1,0 +1,4 @@
+capital = 328
+
+set_cosmetic_tag = GREATMANCHURIA_empire
+set_dictatorship = yes

@@ -1,0 +1,438 @@
+﻿l_japanese:
+##バニラ
+#アジア
+ 
+ AFG_emirate:0 "アフガニスタン首長国"
+ AFG_emirate_DEF:0 "アフガニスタン首長国"
+ 
+ 
+ 
+ 
+ 
+ BHU_kingdom:0 "ブータン王国"
+ BHU_kingdom_DEF:0 "ブータン王国"
+ 
+ 
+ 
+ 
+ 
+ CHI_minguo:0 "中華民国"
+ CHI_minguo_DEF:0 "中華民国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ IRQ_hashemite_kingdom:0 "イラク・ハシミテ王国"
+ IRQ_hashemite_kingdom_DEF:0 "イラク・ハシミテ王国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ KUW_sheikhdom:0 "クウェート首長国"
+ KUW_sheikhdom_DEF:0 "クウェート首長国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ MLD_sultanate:0 "モルディブ・スルタン国"
+ MLD_sultanate_DEF:0 "モルディブ・スルタン国"
+ 
+ 
+ NEP_kingdom:0 "ネパール王国"
+ NEP_kingdom_DEF:0 "ネパール王国"
+ 
+ OMA_imamate:0 "オマーン・イマーム国"
+ OMA_imamate_DEF:0 "オマーン・イマーム国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ SIA_kingdom:0 "シャム王国"
+ SIA_kingdom_DEF:0 "シャム王国"
+ 
+ 
+ 
+ SRL_kingdom:0 "スリランカ王国"
+ SRL_kingdom_DEF:0 "スリランカ王国"
+ 
+ 
+ 
+ 
+ TIB_kingdom:0 "チベット王国"
+ TIB_kingdom_DEF:0 "チベット王国"
+ 
+ 
+ TRC_sheikhdoms:0 "トルーシャル・オマーン首長国"
+ TRC_sheikhdoms_DEF:0 "トルーシャル・オマーン首長国"
+ 
+ TUR_republic:0 "トルコ共和国"
+ TUR_republic_DEF:0 "トルコ共和国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ YEM_mutawakkilite_kingdom:0 "イエメン・ムタワッキリテ王国"
+ YEM_mutawakkilite_kingdom_DEF:0 "イエメン・ムタワッキリテ王国"
+ 
+ 
+ 
+#ヨーロッパ
+ 
+ ALB_kingdom:0 "アルバニア王国"
+ ALB_kingdom_DEF:0 "アルバニア王国"
+ 
+ AUS_republic:0 "オーストリア共和国"
+ AUS_republic_DEF:0 "オーストリア共和国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ BUL_tsardom:0 "ブルガリア・ツァール国"
+ BUL_tsardom_DEF:0 "ブルガリア・ツァール国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ DEN_kingdom:0 "デンマーク王国"
+ DEN_kingdom_DEF:0 "デンマーク王国"
+ 
+ DNZ_free_city:0 "自由都市ダンツィヒ"
+ DNZ_free_city_DEF:0 "自由都市ダンツィヒ"
+ 
+ 
+ 
+ 
+ 
+ FIN_republic:0 "フィンランド共和国"
+ FIN_republic_DEF:0 "フィンランド共和国"
+ 
+ FRA_republic:0 "フランス共和国"
+ FRA_republic_DEF:0 "フランス共和国"
+ 
+ GER_reich:0 "ドイツ国"
+ GER_reich_DEF:0 "ドイツ国"
+ 
+ 
+ GRE_kingdom:0 "ギリシャ王国"
+ GRE_kingdom_DEF:0 "ギリシャ王国"
+ 
+ 
+ 
+ 
+ HUN_kingdom:0 "ハンガリー王国"
+ HUN_kingdom_DEF:0 "ハンガリー王国"
+ 
+ 
+ IRE_republic:0 "アイルランド共和国"
+ IRE_republic_DEF:0 "アイルランド共和国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ LIT_republic:0 "リトアニア共和国"
+ LIT_republic_DEF:0 "リトアニア共和国"
+ 
+ LUX_grand_duchy:0 "ルクセンブルク大公国"
+ LUX_grand_duchy_DEF:0 "ルクセンブルク大公国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ NOR_kingdom:0 "ノルウェー王国"
+ NOR_kingdom_DEF:0 "ノルウェー王国"
+ 
+ 
+ POL_republic:0 "ポーランド共和国"
+ POL_republic_DEF:0 "ポーランド共和国"
+ 
+ POR_kingdom:0 "ポルトガル王国"
+ POR_kingdom_DEF:0 "ポルトガル王国"
+ 
+ 
+ ROM_kingdom:0 "ルーマニア王国"
+ ROM_kingdom_DEF:0 "ルーマニア王国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ SPR_kingdom:0 "スペイン王国"
+ SPR_kingdom_DEF:0 "スペイン王国"
+ 
+ 
+ SWE_kingdom:0 "スウェーデン王国"
+ SWE_kingdom_DEF:0 "スウェーデン王国"
+ 
+ SWI_confederation:0 "スイス連邦"
+ SWI_confederation_DEF:0 "スイス連邦"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ YUG_kingdom:0 "ユーゴスラビア王国"
+ YUG_kingdom_DEF:0 "ユーゴスラビア王国"
+ 
+#アフリカ
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ DJI_republic:0 "ジブチ共和国"
+ DJI_republic_DEF:0 "ジブチ共和国"
+ 
+ 
+ EGY_kingdom:0 "エジプト王国"
+ EGY_kingdom_DEF:0 "エジプト王国"
+ 
+ 
+ 
+ ETH_empire:0 "エチオピア帝国"
+ ETH_empire_DEF:0 "エチオピア帝国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ LIB_republic:0 "リベリア共和国"
+ LIB_republic_DEF:0 "リベリア共和国"
+ 
+ 
+ 
+ 
+ 
+ MOR_sultanate:0 "モロッコ・スルタン国"
+ MOR_sultanate_DEF:0 "モロッコ・スルタン国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#新大陸
+ ARG_republic:0 "アルゼンチン共和国"
+ ARG_republic_DEF:0 "アルゼンチン共和国"
+ 
+ BAH_state:0 "バハマ国"
+ BAH_state_DEF:0 "バハマ国"
+ 
+ 
+ BOL_republic:0 "ボリビア共和国"
+ BOL_republic_DEF:0 "ボリビア共和国"
+ 
+ BRA_united_states:0 "ブラジル合衆国"
+ BRA_united_states_DEF:0 "ブラジル合衆国"
+ 
+ 
+ 
+ CHL_republic:0 "チリ共和国"
+ CHL_republic_DEF:0 "チリ共和国"
+ 
+ COL_republic:0 "コロンビア共和国"
+ COL_republic_DEF:0 "コロンビア共和国"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ELS_republic:0 "エルサルバドル共和国"
+ ELS_republic_DEF:0 "エルサルバドル共和国"
+ 
+ 
+ GUA_republic:0 "グアテマラ共和国"
+ GUA_republic_DEF:0 "グアテマラ共和国"
+ 
+ 
+ 
+ HON_republic:0 "ホンジュラス共和国"
+ HON_republic_DEF:0 "ホンジュラス共和国"
+ 
+ 
+ MEX_united_states:0 "メキシコ合衆国"
+ MEX_united_states_DEF:0 "メキシコ合衆国"
+ 
+ NIC_republic:0 "ニカラグア共和国"
+ NIC_republic_DEF:0 "ニカラグア共和国"
+ 
+ PAN_republic:0 "パナマ共和国"
+ PAN_republic_DEF:0 "パナマ共和国"
+ 
+ PAR_republic:0 "パラグアイ共和国"
+ PAR_republic_DEF:0 "パラグアイ共和国"
+ 
+ 
+ 
+ 
+ 
+ URG_oriental_republic:0 "ウルグアイ東方共和国"
+ URG_oriental_republic_DEF:0 "ウルグアイ東方共和国"
+ 
+ 
+ VEN_republic:0 "ベネズエラ共和国"
+ VEN_republic_DEF:0 "ベネズエラ共和国"
+ 
+ WIN_federation:0 "西インド連邦"
+ WIN_federation_DEF:0 "西インド連邦"
+ 
+#大洋州
+ 
+ 
+ 
+ 
+ 
+ 
+ PNG_independent_state:0 "パプアニューギニア独立国"
+ PNG_independent_state_DEF:0 "パプアニューギニア独立国"
+ PNG_republic:0 "パプアニューギニア共和国"
+ PNG_republic_DEF:0 "パプアニューギニア共和国"
+ 
+ 
+ 
+ 
+#アメリカ諸州
+##追加国家
+#アジア
+ BRN_sultanate:0 "ブルネイ・スルタン国"
+ BRN_sultanate_DEF:0 "ブルネイ・スルタン国"
+ 
+ 
+ 
+ 
+ JRS_international_special_administrative_region:0 "エルサレム国際特別行政区"
+ JRS_international_special_administrative_region_DEF:0 "エルサレム国際特別行政区"
+ 
+ SKM_kingdom:0 "シッキム王国"
+ SKM_kingdom_DEF:0 "シッキム王国"
+ 
+ SRW_raj:0 "サラワク王国"
+ SRW_raj_DEF:0 "サラワク王国"
+ 
+ 
+ 
+ 
+ 
+#ヨーロッパ
+ ADR_co-principality:0 "アンドラ共同公国"
+ ADR_co-principality_DEF:0 "アンドラ共同公国"
+ 
+ 
+ BYZ_empire:0 "ビザンツ帝国"
+ BYZ_empire_DEF:0 "ビザンツ帝国"
+ 
+ 
+ LIE_principality:0 "リヒテンシュタイン侯国"
+ LIE_principality_DEF:0 "リヒテンシュタイン侯国"
+ 
+ MCO_principality:0 "モナコ公国"
+ MCO_principality_DEF:0 "モナコ公国"
+ 
+ NTL_kingdom:0 "ネーデルラント王国"
+ NTL_kingdom_DEF:0 "ネーデルラント王国"
+ 
+ RUS_empire:0 "ロシア帝国"
+ RUS_empire_DEF:0 "ロシア帝国"
+ 
+ SMR_most_serene_republic:0 "晴朗極まる共和国サンマリノ"
+ SMR_most_serene_republic_DEF:0 "晴朗極まる共和国サンマリノ"
+ 
+#アフリカ
+ 
+ 
+ 
+ 
+#新大陸
+ 
+#大洋州
+ 
+ 
+ 
+ 
+#アメリカ諸州

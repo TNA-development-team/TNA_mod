@@ -1,0 +1,4 @@
+capital = 908
+
+set_cosmetic_tag = AUSSA_sultanate
+set_dictatorship = yes

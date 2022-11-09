@@ -1,0 +1,4 @@
+capital = 298
+
+set_cosmetic_tag = LIB_republic
+set_dictatorship = yes

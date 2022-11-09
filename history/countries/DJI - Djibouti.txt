@@ -1,0 +1,6 @@
+capital = 268
+
+set_cosmetic_tag = DJI_republic
+set_dictatorship = yes
+
+set_autonomy = {	target = CYP	autonomous_state = puppet	}

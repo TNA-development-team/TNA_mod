@@ -1,0 +1,11 @@
+capital = 16
+
+set_cosmetic_tag = FRA_republic
+set_dictatorship = yes
+
+set_autonomy = {	target = LIB	autonomous_state = protected_state	}
+
+set_autonomy = {	target = MAD	autonomous_state = colony	}
+set_autonomy = {	target = MHL	autonomous_state = colony	}
+set_autonomy = {	target = NMR	autonomous_state = colony	}
+set_autonomy = {	target = TAH	autonomous_state = colony	}

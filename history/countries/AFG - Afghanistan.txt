@@ -1,0 +1,4 @@
+capital = 267
+
+set_cosmetic_tag = AFG_emirate
+set_dictatorship = yes

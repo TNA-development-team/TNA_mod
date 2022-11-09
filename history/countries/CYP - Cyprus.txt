@@ -1,0 +1,4 @@
+capital = 183
+
+set_cosmetic_tag = DJI-CYP_grand_duchy
+set_dictatorship = yes
