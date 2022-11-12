@@ -6,7 +6,7 @@ state = {
 	state_category = city
 	
 	history = {
-		owner = BEL
+		owner = RIF
 		add_core_of = MOR
 		add_core_of = RIF
 		add_claim_by = BEL
