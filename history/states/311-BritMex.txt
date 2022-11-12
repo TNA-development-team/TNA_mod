@@ -5,8 +5,9 @@ state = {
 	state_category = pastoral
 	
 	history = {
-		owner = BLZ
+		owner = BOS
 		add_core_of = BLZ
+                add_core_of = BOS
 		buildings = {
 			infrastructure = 2
 			2077 = {	naval_base = 1	}
