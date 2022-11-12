@@ -1,2 +1,4 @@
 capital = 311
+
+set_cosmetic_tag = BOSandHRZ_exile_government
 set_dictatorship = yes

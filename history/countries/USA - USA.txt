@@ -2,3 +2,5 @@ capital = 361
 
 set_cosmetic_tag = AMERICA_united_states_48
 set_dictatorship = yes
+
+set_autonomy = {	target = PHI	autonomous_state = overseas_territory	}

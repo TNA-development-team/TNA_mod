@@ -1,2 +1,4 @@
 capital = 327
+
+set_cosmetic_tag = COUNTRY_AMERICA_united_states_48
 set_dictatorship = yes

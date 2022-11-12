@@ -17,6 +17,10 @@
  KOR_overseas_territory_DEF:0 "$OVERLORDADJ$領朝鮮"
  KOR_overseas_territory_ADJ:0 "$OVERLORDADJ$領朝鮮"
  
+ PHI_overseas_territory:0 "$OVERLORDADJ$領フィリピン諸島"
+ PHI_overseas_territory_DEF:0 "$OVERLORDADJ$領フィリピン諸島"
+ PHI_overseas_territory_ADJ:0 "$OVERLORDADJ$領フィリピン諸島"
+ 
 #ヨーロッパ
  ICE_overseas_territory:0 "$OVERLORDADJ$領アイスランド"
  ICE_overseas_territory_DEF:0 "$OVERLORDADJ$領アイスランド"
@@ -112,10 +116,6 @@
  WES_colony_ADJ:0 "$OVERLORDADJ$領サハラ"
  
 #新大陸
- BLZ_colony:0 "$OVERLORDADJ$領ホンジュラス植民地"
- BLZ_colony_DEF:0 "$OVERLORDADJ$領ホンジュラス植民地"
- BLZ_colony_ADJ:0 "$OVERLORDADJ$領ホンジュラス"
- 
  CAN_dominion:0 "カナダ自治領"
  CAN_dominion_DEF:0 "カナダ自治領"
  CAN_dominion_ADJ:0 "カナダ"
@@ -144,6 +144,10 @@
  FSM_colony:0 "$OVERLORDADJ$領ミクロネシア植民地"
  FSM_colony_DEF:0 "$OVERLORDADJ$領ミクロネシア植民地"
  FSM_colony_ADJ:0 "$OVERLORDADJ$領ミクロネシア"
+ 
+ HAW_junior_partner_protected_territory:0 "$OVERLORDADJ$保護領ハワイ王国"
+ HAW_junior_partner_protected_territory_DEF:0 "$OVERLORDADJ$保護領ハワイ王国"
+ HAW_junior_partner_protected_territory_ADJ:0 "$OVERLORDADJ$領ハワイ"
  
  NZL_dominion:0 "ニュージーランド自治領"
  NZL_dominion_DEF:0 "ニュージーランド自治領"
