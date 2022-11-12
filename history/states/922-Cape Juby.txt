@@ -1,10 +1,11 @@
-state={
-	id=922
-	name="STATE_922"
-	manpower=0
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
-history = {
+state = {
+	id = 922
+	name = "STATE_922"
+	manpower = 0
+	buildings_max_level_factor = 1
+	state_category = wasteland
+	
+	history = {
 		owner = RIF
 		add_core_of = RIF
 		buildings = {
@@ -18,5 +19,4 @@ history = {
 		8038	8111	4920
 	}
 	local_supplies = 0.0
-}
 }

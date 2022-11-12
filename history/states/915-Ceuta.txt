@@ -7,9 +7,8 @@ state = {
 	
 	history = {
 		owner = RIF
-		add_core_of = MOR
 		add_core_of = RIF
-		add_claim_by = BEL
+		add_core_of = MOR
 		buildings = {
 			infrastructure = 4
 			9945 = {	naval_base = 3	}
