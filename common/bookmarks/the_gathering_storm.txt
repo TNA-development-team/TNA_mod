@@ -17,6 +17,66 @@ bookmarks = {
 				
 			}	
 		}
+		"GER"={
+			history = ""
+			ideology = authoritarian_reactionism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"FRA"={
+			history = ""
+			ideology = authoritarian_reactionism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"GBR"={
+			history = ""
+			ideology = authoritarian_reactionism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"RUS"={
+			history = ""
+			ideology = authoritarian_reactionism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"ITA"={
+			history = ""
+			ideology = authoritarian_reactionism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
+		"USA"={
+			history = ""
+			ideology = authoritarian_reactionism
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}	
+		}
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
