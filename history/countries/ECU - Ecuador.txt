@@ -1,2 +1,2 @@
-capital = 305
+capital = 649
 set_dictatorship = yes

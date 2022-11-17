@@ -1,0 +1,6 @@
+capital = 183
+
+set_cosmetic_tag = STJ_knights_order_state
+set_dictatorship = yes
+
+set_autonomy = {	target = DJI	autonomous_state = protected_state	}

@@ -6,4 +6,7 @@ set_dictatorship = yes
 set_autonomy = {	target = GYA	autonomous_state = colony	}
 set_autonomy = {	target = SUD	autonomous_state = colony	}
 
+set_autonomy = {	target = BRN	autonomous_state = protected_state	}
+set_autonomy = {	target = MAL	autonomous_state = protected_state	}
+
 set_autonomy = {	target = ICE	autonomous_state = overseas_territory	}

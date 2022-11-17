@@ -12,6 +12,7 @@ set_autonomy = {	target = BHU	autonomous_state = protected_state	}
 set_autonomy = {	target = EGY	autonomous_state = protected_state	}
 set_autonomy = {	target = NEP	autonomous_state = protected_state	}
 set_autonomy = {	target = SKM	autonomous_state = protected_state	}
+set_autonomy = {	target = SRW	autonomous_state = protected_state	}
 
 set_autonomy = {	target = IND	autonomous_state = junior_partner_colony	}
 

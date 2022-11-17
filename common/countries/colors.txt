@@ -1108,8 +1108,8 @@ MCO = {	#モナコ
 	color_ui = rgb { 231 136 147 }
 }
 NTL = {	#ネーデルラント
-	color = rgb { 255 154 0 }
-	color_ui = rgb { 255 154 0 }
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 203 138 74 }
 }
 RUS = {	#ロシア
 	color = rgb { 72 143 68 }
@@ -1118,6 +1118,10 @@ RUS = {	#ロシア
 SMR = {	#サンマリノ
 	color = rgb { 94 182 228 }
 	color_ui = rgb { 94 182 228 }
+}
+STJ = {	#聖ヨハネ
+	color = rgb { 243 177 180 }
+	color_ui = rgb { 243 177 180 }
 }
 
 #アフリカ

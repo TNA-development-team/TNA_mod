@@ -240,8 +240,8 @@
  
  
  
- DJI_republic:0 "ジブチ共和国"
- DJI_republic_DEF:0 "ジブチ共和国"
+ DJI_knights_order_state:0 "ジブチ騎士団国"
+ DJI_knights_order_state_DEF:0 "ジブチ騎士団国"
  
  
  EGY_kingdom:0 "エジプト王国"
@@ -422,6 +422,9 @@
  
  SMR_most_serene_republic:0 "晴朗極まる共和国サンマリノ"
  SMR_most_serene_republic_DEF:0 "晴朗極まる共和国サンマリノ"
+ 
+ STJ_knights_order_state:0 "聖ヨハネ騎士団国"
+ STJ_knights_order_state_DEF:0 "聖ヨハネ騎士団国"
  
 #アフリカ
  

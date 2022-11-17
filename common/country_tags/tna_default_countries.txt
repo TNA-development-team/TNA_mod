@@ -27,6 +27,7 @@ LIE	= "countries/Western Europe.txt"	#リヒテンシュタイン
 MCO	= "countries/Western Europe.txt"	#モナコ
 NTL	= "countries/Western Europe.txt"	#ネーデルラント
 SMR	= "countries/Western Europe.txt"	#サンマリノ
+STJ	= "countries/Western Europe.txt"	#聖ヨハネ
 
 #Eastern Europe
 BLT	= "countries/Eastern Europe.txt"	#バルト
