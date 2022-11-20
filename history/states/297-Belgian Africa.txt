@@ -5,8 +5,8 @@ state = {
 	state_category = enclave
 	
 	history = {
-		owner = STJ
-		add_core_of = STJ
+		owner = DJI
+		add_core_of = DJI
 		add_core_of = EQG
 		buildings = {
 			infrastructure = 1
