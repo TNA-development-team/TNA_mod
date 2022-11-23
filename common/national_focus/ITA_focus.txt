@@ -1,0 +1,34 @@
+focus_tree = { 
+    id = ITA_focus_tree 
+    country = { 
+        base = 0 
+        modifier = { 
+            add = 10 
+            tag = ITA 
+        } 
+}
+focus = {
+    id = ITA_1908_strategy #イタリア1908年戦略
+    x = 3
+    y = 0
+    cost = 5
+    completion_reward = {
+        add_political_power = 100
+    }
+}
+focus = {
+    id = ITA_go_right #右傾化
+    prerequisite = { focus = ITA_1908_strategy }
+    mutually_exclusive = {  }
+    cost = 10
+    completion_reward ={
+   
+    add_ideas = {
+    TNA_ITA_go_right
+        }
+    }
+    x = 2
+    y = 1
+}
+
+}
