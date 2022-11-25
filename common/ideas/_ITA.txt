@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		ITA_go_right_idea ={	#‰EŒX‰»
+			allowed = {	original_tag = ITA	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			
+			modifier = {
+				rightist_democratic_drift = 0.1
+			}
+		}
+	}
+}

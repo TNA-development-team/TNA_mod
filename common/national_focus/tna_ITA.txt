@@ -1,0 +1,43 @@
+focus_tree = { 
+	id = ITA_focus_tree
+	country = {
+		base = 0 
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	shared_focus = ITA_1908_strategy
+}
+
+shared_focus = {	#イタリア1908年戦略
+	id = ITA_1908_strategy
+	#icon = 
+	cost = 5
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ITA_1908_strategy"
+		add_political_power = 100
+	}
+}
+
+shared_focus = {	#右傾化
+	id = ITA_go_right
+	#icon = 
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ITA_go_right"
+		add_ideas = ITA_go_right_idea
+	}
+	relative_position_id = ITA_1908_strategy
+	prerequisite = {	focus = ITA_1908_strategy	}
+}
