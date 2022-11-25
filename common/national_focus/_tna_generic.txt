@@ -1,109 +1,257 @@
-﻿
-focus_tree = {
-	id = generic_focus
-	
+﻿focus_tree = {
+	id = generic_focus_tree
 	country = {
 		factor = 1
 	}
-	
 	default = yes
 	reset_on_civilwar = no
+	shared_focus = generic_industrial_effort
+}
 
-	focus = {
-		id = industrial_effort
-		icon = GFX_goal_generic_production
-		completion_reward = { add_tech_bonus={ name=industrial_bonus bonus=0.15 uses=3 category=industry } }
-		cost = 10
-		x = 6
-		y = 0
-		ai_will_do = { factor = 30 }
-	}
-	focus = {
-		id = infrastructure_effort
-		prerequisite = { focus=industrial_effort }
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
-		completion_reward = {
-		random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } }
-		random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } }
+shared_focus = {	#産業への注力
+	id = generic_industrial_effort
+	icon = GFX_goal_generic_production
+	cost = 10
+	x = 5
+	y = 0
+	ai_will_do = {	factor = 30	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_industrial_effort"
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.15
+			uses = 3
+			category = industry
 		}
-
-		complete_tooltip = { add_building_construction={ type=infrastructure level=3 instant_build=yes } add_building_construction={ type=infrastructure level=3 instant_build=yes } }
-		cost = 10
-		x = 6
-		y = 1
-		ai_will_do = { factor = 30 }
 	}
+}
 
-	focus = {
-		id = construction_effort
-		prerequisite = { focus=infrastructure_effort }
-		available = { date > 1909.1.1 }
-		icon = GFX_goal_generic_construct_civ_factory
-		bypass = { custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 1 include_locked=yes }					 } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=industrial_complex size > 0 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=industrial_complex size > 0 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=3 add_building_construction={ type=industrial_complex level=3 instant_build=yes } } }
-		complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=industrial_complex level=3 instant_build=yes }			 }
-		cost = 10
-		x = 6
-		y = 2
-		ai_will_do = { factor = 10 }
+shared_focus = {	#インフラへの注力 I
+	id = generic_infrastructure_effort_1
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {	factor = 30	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_infrastructure_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+			}
+		}
 	}
-
-	focus = {
-		id = production_effort
-		prerequisite = { focus=infrastructure_effort }
-		available = { date > 1909.1.1 }
-		icon = GFX_goal_generic_construct_mil_factory
-		bypass = { custom_trigger_tooltip={ tooltip=production_effort_tt all_owned_state={ free_building_slots={ building=arms_factory size < 1 include_locked=yes } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=2 add_building_construction={ type=arms_factory level=2 instant_build=yes } } }
-		complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } }
-		cost = 10
-		x = 4
-		y = 2
-		ai_will_do = { factor = 10 }
-	}
-
-
-	focus = {
-		id = ww1_dockyard_effort_1
-		prerequisite = { focus=infrastructure_effort }
-		prerequisite = { focus=naval_effort }
-		available = { date > 1909.1.1 }
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 2
-		y = 2
-		cost = 10
-		ai_will_do = { factor = 10 }
-		bypass = {
-			custom_trigger_tooltip = {
-
-				NOT = {
-					any_owned_state = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_infrastructure_effort_1"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure size > 0
+								}
+								is_in_home_area = yes
+							}
 						}
 					}
 				}
 			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
 		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+	}
+	relative_position_id = generic_industrial_effort
+	prerequisite = {	focus = generic_industrial_effort	}
+}
 
-		complete_tooltip = {
-
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+shared_focus = {	#建設への注力 I
+	id = generic_construction_effort_1
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 10
+	x = -4
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1909.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_construction_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = industrial_complex
+					size < 1
+					include_locked = yes
 				}
 			}
 		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_construction_effort_1"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_1
+	prerequisite = {	focus = generic_infrastructure_effort_1	}
+}
+
+shared_focus = {	#軍備への注力 I
+	id = generic_production_effort_1
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1909.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_production_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = arms_factory
+					size < 1
+					include_locked = yes
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_production_effort_1"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } }
+	relative_position_id = generic_infrastructure_effort_1
+	prerequisite = {	focus = generic_infrastructure_effort_1	}
+}
+
+shared_focus = {	#造船への注力 I
+	id = generic_dockyard_effort_1
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 0
+	y = 1
+	cost = 10
+	ai_will_do = { factor = 10 }
+	available = {	date > 1909.1.1	}
+	available = {	any_owned_state = {	is_coastal = yes	}	}
+	bypass = {
+		custom_trigger_tooltip = {
+			NOT = {
+				any_owned_state = {
 					is_in_home_area = yes
 					free_building_slots = {
 						building = dockyard
@@ -111,169 +259,361 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_industrial_effort"
+		random_owned_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = dockyard
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		random_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_1
+	prerequisite = {	focus = generic_infrastructure_effort_1	}
+}
+
+shared_focus = {	#航空基地の拡張 I
+	id = generic_airfield_expansion_1
+	icon = GFX_goal_generic_construction
+	x = 2
+	y = 1
+	cost = 10
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1909.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_airfield_expansion_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = air_base
+					size < 2
 				}
 			}
 		}
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_airfield_expansion_1"
+		random_owned_state = {
+			limit = { 
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_1
+	prerequisite = {	focus = generic_infrastructure_effort_1	}
+}
 
+shared_focus = {	#研究への注力 I
+	id = generic_research_effort_1
+	icon = GFX_goal_generic_production
+	x = 4
+	y = 1
+	cost = 10
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1909.1.1	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_research_effort_1"
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.15
+			uses = 3
+			category = industry
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_1
+	prerequisite = {	focus = generic_infrastructure_effort_1	}
+}
 
-
-	focus = {
-		id = ww1_airfield_expansion_1
-		available = { date > 1909.1.1 }
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus=infrastructure_effort }
-		prerequisite = { focus=aviation_effort }
-		x = 8
-		y = 2
-		cost = 10
-		ai_will_do = { factor = 10 }
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = air_base
-						size < 2
-					}
+shared_focus = {	#インフラへの注力 II
+	id = generic_infrastructure_effort_2
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1911.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_infrastructure_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = infrastructure
+					size < 1
 				}
 			}
 		}
-
-		completion_reward = {
-
-				random_owned_state = {
-					limit = { 
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}							
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_infrastructure_effort_2"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
 				}
-				random_owned_state = {
-					limit = { 
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}							
-				}
-				random_owned_state = {
-					limit = { 
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}							
-				}			
-		}
-	}
-
-	focus = {
-		id = infrastructure_effort_2
-		prerequisite = { focus=construction_effort focus=production_effort focus=ww1_dockyard_effort_1 focus=ww1_airfield_expansion_1}
-		available = { date > 1911.1.1 }
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } } random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } } }
-		complete_tooltip = { add_building_construction={ type=infrastructure level=3 instant_build=yes } add_building_construction={ type=infrastructure level=3 instant_build=yes } }
-		cost = 10
-		x = 5
-		y = 3
-		ai_will_do = { factor = 10 }
-	}
-
-	focus = {
-		id = construction_effort_2
-		prerequisite = { focus=infrastructure_effort_2 }
-		prerequisite = { focus=construction_effort }
-		available = { date > 1912.1.1 }
-		icon = GFX_goal_generic_construct_civ_factory
-		bypass = { custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 1 include_locked=yes } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=industrial_complex size > 0 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=industrial_complex size > 0 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=3 add_building_construction={ type=industrial_complex level=3 instant_build=yes } } }
-		complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=industrial_complex level=3 instant_build=yes } }
-		cost = 10
-		x = 6
-		y = 4
-		ai_will_do = { factor = 10 }
-	}
-
-	focus = {
-		id = production_effort_2
-		prerequisite = { focus=infrastructure_effort_2 }
-		prerequisite = { focus=production_effort }
-		available = { date > 1912.1.1 }
-		icon = GFX_goal_generic_construct_mil_factory
-		bypass = { custom_trigger_tooltip={ tooltip=production_effort_tt all_owned_state={ free_building_slots={ building=arms_factory size < 1 include_locked=yes } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } } }
-		complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } }
-		cost = 10
-		x = 4
-		y = 4
-		ai_will_do = { factor = 10 }
-	}
-
-
-	focus = {
-		id = ww1_dockyard_effort_2
-		prerequisite = { focus=infrastructure_effort_2 }
-		prerequisite = { focus=ww1_dockyard_effort_1 }
-		available = { date > 1912.1.1 }
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 2
-		y = 4
-		cost = 10
-		ai_will_do = { factor = 10 }
-		bypass = {
-			custom_trigger_tooltip = {
-
-				NOT = {
-					any_owned_state = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure size > 0
+								}
+								is_in_home_area = yes
+							}
 						}
 					}
 				}
 			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
 		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_1
+	prerequisite = {
+		focus = generic_construction_effort_1
+		focus = generic_production_effort_1
+		focus = generic_dockyard_effort_1
+		focus = generic_airfield_expansion_1
+		focus = generic_research_effort_1
+	}
+}
 
-		complete_tooltip = {
-
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+shared_focus = {	#建設への注力 II
+	id = generic_construction_effort_2
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 10
+	x = -4
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_construction_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = industrial_complex
+					size < 1
+					include_locked = yes
 				}
 			}
 		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_construction_effort_2"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_2
+	prerequisite = {	focus = generic_infrastructure_effort_2	}
+}
+
+shared_focus = {	#軍備への注力 II
+	id = generic_production_effort_2
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_production_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = arms_factory
+					size < 1
+					include_locked = yes
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_production_effort_2"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } }
+	relative_position_id = generic_infrastructure_effort_2
+	prerequisite = {	focus = generic_infrastructure_effort_2	}
+}
+
+shared_focus = {	#造船への注力 II
+	id = generic_dockyard_effort_2
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 0
+	y = 1
+	cost = 10
+	ai_will_do = { factor = 10 }
+	available = {	date > 1912.1.1	}
+	available = {	any_owned_state = {	is_coastal = yes	}	}
+	bypass = {
+		custom_trigger_tooltip = {
+			NOT = {
+				any_owned_state = {
 					is_in_home_area = yes
 					free_building_slots = {
 						building = dockyard
@@ -281,172 +621,361 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_industrial_effort"
+		random_owned_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = dockyard
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		random_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_2
+	prerequisite = {	focus = generic_infrastructure_effort_2	}
+}
+
+shared_focus = {	#航空基地の拡張 II
+	id = generic_airfield_expansion_2
+	icon = GFX_goal_generic_construction
+	x = 2
+	y = 1
+	cost = 10
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_airfield_expansion_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = air_base
+					size < 2
 				}
 			}
 		}
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_airfield_expansion_2"
+		random_owned_state = {
+			limit = { 
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_2
+	prerequisite = {	focus = generic_infrastructure_effort_2	}
+}
 
-	focus = {
-		id = ww1_airfield_expansion_2
-		available = { date > 1912.1.1 }
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus=infrastructure_effort_2 }
-		prerequisite = { focus=ww1_airfield_expansion_1 }
-		x = 8
-		y = 4
-		cost = 10
-		ai_will_do = { factor = 10 }
+shared_focus = {	#研究への注力 II
+	id = generic_research_effort_2
+	icon = GFX_goal_generic_production
+	x = 4
+	y = 1
+	cost = 10
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_research_effort_2"
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.15
+			uses = 3
+			category = industry
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_2
+	prerequisite = {	focus = generic_infrastructure_effort_2	}
+}
 
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = air_base
-						size < 2
-					}
+shared_focus = {	#インフラへの注力 III
+	id = generic_infrastructure_effort_3
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1913.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_infrastructure_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = infrastructure
+					size < 1
 				}
 			}
 		}
-
-		completion_reward = {
-			random_owned_state = {
-				limit = { 
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_infrastructure_effort_3"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
 				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}							
-			}
-			random_owned_state = {
-				limit = { 
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}							
-			}
-			random_owned_state = {
-				limit = { 
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}							
-			}			
-		}
-	}
-
-
-
-
-
-	focus = {
-		id = ww1_infrastructure_effort_3
-		prerequisite = { focus=construction_effort_2 focus=production_effort_2 focus=ww1_dockyard_effort_1 }
-		available = { date > 1913.1.1 }
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } } random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } } }
-		complete_tooltip = { add_building_construction={ type=infrastructure level=3 instant_build=yes } add_building_construction={ type=infrastructure level=3 instant_build=yes } }
-		cost = 10
-		x = 5
-		y = 5
-		ai_will_do = { factor = 10 }
-	}
-
-	focus = {
-		id = construction_effort_3
-		prerequisite = { focus=ww1_infrastructure_effort_3 }
-		prerequisite = { focus=construction_effort_2 }
-		available = { date > 1915.1.1 }
-		icon = GFX_goal_generic_construct_civ_factory
-		bypass = { custom_trigger_tooltip={ tooltip=construction_effort_tt all_owned_state={ free_building_slots={ building=industrial_complex size < 2 include_locked=yes } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=industrial_complex size > 1 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=industrial_complex size > 1 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=2 add_building_construction={ type=industrial_complex level=2 instant_build=yes } } }
-		complete_tooltip = { add_extra_state_shared_building_slots=2 add_building_construction={ type=industrial_complex level=2 instant_build=yes } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 6
-		y = 6
-	}
-
-	focus = {
-		id = production_effort_3
-		prerequisite = { focus=ww1_infrastructure_effort_3 }
-		prerequisite = { focus=production_effort_2 }
-		available = { date > 1915.1.1 }
-		icon = GFX_goal_generic_construct_mil_factory
-		bypass = { custom_trigger_tooltip={ tooltip=production_effort_tt all_owned_state={ free_building_slots={ building=arms_factory size < 1 include_locked=yes }					 } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=arms_factory size > 0 include_locked=yes } is_in_home_area=yes } } } } } add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } } }
-		complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } }
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 4
-		y = 6
-	}
-
-
-
-	focus = {
-		id = ww1_dockyard_effort_3
-		prerequisite = { focus=ww1_infrastructure_effort_3 }
-		prerequisite = { focus=ww1_dockyard_effort_2 }
-		available = { date > 1915.1.1 }
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 2
-		y = 6
-		cost = 10
-		ai_will_do = { factor = 10 }
-		bypass = {
-			custom_trigger_tooltip = {
-
-				NOT = {
-					any_owned_state = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = dockyard
-							size > 1
-							include_locked = yes
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure size > 0
+								}
+								is_in_home_area = yes
+							}
 						}
 					}
 				}
 			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
 		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_2
+	prerequisite = {
+		focus = generic_construction_effort_2
+		focus = generic_production_effort_2
+		focus = generic_dockyard_effort_2
+		focus = generic_airfield_expansion_2
+		focus = generic_research_effort_2
+	}
+}
 
-		complete_tooltip = {
-
-			random_state = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+shared_focus = {	#建設への注力 III
+	id = generic_construction_effort_3
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 10
+	x = -4
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_construction_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = industrial_complex
+					size < 1
+					include_locked = yes
 				}
 			}
 		}
-		completion_reward = {
-			random_owned_state = {
-				limit = {
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_construction_effort_3"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		add_extra_state_shared_building_slots = 3
+		add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_3
+	prerequisite = {	focus = generic_infrastructure_effort_3	}
+}
+
+shared_focus = {	#軍備への注力 III
+	id = generic_production_effort_3
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_production_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = arms_factory
+					size < 1
+					include_locked = yes
+				}
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_production_effort_3"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = { add_extra_state_shared_building_slots=3 add_building_construction={ type=arms_factory level=3 instant_build=yes } }
+	relative_position_id = generic_infrastructure_effort_3
+	prerequisite = {	focus = generic_infrastructure_effort_3	}
+}
+
+shared_focus = {	#造船への注力 III
+	id = generic_dockyard_effort_3
+	icon = GFX_goal_generic_construct_naval_dockyard
+	x = 0
+	y = 1
+	cost = 10
+	ai_will_do = { factor = 10 }
+	available = {	date > 1912.1.1	}
+	available = {	any_owned_state = {	is_coastal = yes	}	}
+	bypass = {
+		custom_trigger_tooltip = {
+			NOT = {
+				any_owned_state = {
 					is_in_home_area = yes
 					free_building_slots = {
 						building = dockyard
@@ -454,122 +983,255 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
+			}
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_industrial_effort"
+		random_owned_state = {
+			limit = {
+				is_in_home_area = yes
+				free_building_slots = {
+					building = dockyard
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	complete_tooltip = {
+		random_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_3
+	prerequisite = {	focus = generic_infrastructure_effort_3	}
+}
+
+shared_focus = {	#航空基地の拡張 III
+	id = generic_airfield_expansion_3
+	icon = GFX_goal_generic_construction
+	x = 2
+	y = 1
+	cost = 10
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1912.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_airfield_expansion_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = air_base
+					size < 2
 				}
 			}
 		}
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_airfield_expansion_3"
+		random_owned_state = {
+			limit = { 
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_3
+	prerequisite = {	focus = generic_infrastructure_effort_3	}
+}
 
-	focus = {
-		id = ww1_airfield_expansion_3
-		available = { date > 1915.1.1 }
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus=ww1_infrastructure_effort_3 }
-		prerequisite = { focus=ww1_airfield_expansion_2 }
-		x = 8
-		y = 6
-		cost = 10
-		ai_will_do = { factor = 10 }
+shared_focus = {	#研究への注力 III
+	id = generic_research_effort_3
+	icon = GFX_goal_generic_production
+	x = 4
+	y = 1
+	cost = 10
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1916.1.1	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_research_effort_3"
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.15
+			uses = 3
+			category = industry
+		}
+	}
+	relative_position_id = generic_infrastructure_effort_3
+	prerequisite = {	focus = generic_infrastructure_effort_3	}
+}
 
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = air_focus_bypass_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = air_base
-						size < 2
-					}
+shared_focus = {	#研究機関の拡張 I
+	id = generic_research_institutions_expansion_1
+	icon = GFX_focus_research
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1916.1.1	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_research_institutions_expansion_1"
+		add_research_slot = 1
+	}
+	relative_position_id = generic_infrastructure_effort_3
+	prerequisite = {
+		focus = generic_construction_effort_3
+		focus = generic_production_effort_3
+		focus = generic_dockyard_effort_3
+		focus = generic_airfield_expansion_3
+		focus = generic_research_effort_3
+	}
+}
+
+shared_focus = {	#インフラへの注力 IV
+	id = generic_infrastructure_effort_4
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1917.1.1	}
+	bypass = {
+		custom_trigger_tooltip = {
+			tooltip = generic_infrastructure_effort_tt
+			all_owned_state = {
+				free_building_slots = {
+					building = infrastructure
+					size < 1
 				}
 			}
 		}
-
-		completion_reward = {
-			random_owned_state = {
-				limit = { 
-					free_building_slots = {
-						building = air_base
-						size > 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_infrastructure_effort_4"
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
 					}
 				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}							
 			}
-			random_owned_state = {
-				limit = { 
-					free_building_slots = {
-						building = air_base
-						size > 1
-					}
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}							
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
 			}
-			random_owned_state = {
-				limit = { 
-					free_building_slots = {
-						building = air_base
-						size > 1
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
 					}
 				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}							
-			}			
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
 		}
 	}
-
-
-	focus = {
-		id = extra_tech_slot
-		prerequisite = { focus=ww1_airfield_expansion_3 focus=construction_effort_3 focus=production_effort_3 focus=ww1_dockyard_effort_3}
-		available = { date > 1916.1.1 }
-		icon = GFX_focus_research
-		completion_reward = { add_research_slot=1 }
-		cost = 10
-		x = 8
-		y = 7
-		ai_will_do = { factor = 10 }
+	complete_tooltip = {
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 3
+			instant_build = yes
+		}
 	}
+	relative_position_id = generic_research_institutions_expansion_1
+	prerequisite = {	focus = generic_research_institutions_expansion_1	}
+}
 
-
-	focus = {
-		id = ww1_infrastructure_effort_4
-		prerequisite = { focus=extra_tech_slot }
-		available = { date > 1917.1.1 }
-		icon = GFX_goal_generic_construct_infrastructure
-		bypass = { custom_trigger_tooltip={ tooltip=infrastructure_effort_tt all_owned_state={			 free_building_slots={ building=infrastructure size < 1 } } } }
-		completion_reward = { random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } } random_owned_state={ limit={ free_building_slots={ building=infrastructure size > 0 } OR={ is_in_home_area=yes NOT={ owner={ any_owned_state={ free_building_slots={ building=infrastructure size > 0 } is_in_home_area=yes } } } } } add_building_construction={ type=infrastructure level=3 instant_build=yes } } }
-		complete_tooltip = { add_building_construction={ type=infrastructure level=3 instant_build=yes } add_building_construction={ type=infrastructure level=3 instant_build=yes } }
-		cost = 10
-		x = 8
-		y = 8
-		ai_will_do = { factor = 10 }
+shared_focus = {	#研究機関の拡張 II
+	id = generic_research_institutions_expansion_2
+	icon = GFX_focus_research
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {	factor = 10	}
+	available = {	date > 1918.1.1	}
+	available = {	num_of_factories > 50	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus generic_research_institutions_expansion_2"
+		add_research_slot = 1
 	}
-
-	focus = {
-		id = extra_tech_slot_2
-		prerequisite = { focus=ww1_infrastructure_effort_4 }
-		available = { date > 1918.1.1 }
-		icon = GFX_focus_research
-		available = { num_of_factories > 50 }
-		completion_reward = { add_research_slot=1 }
-		cost = 10
-		x = 8
-		y = 9
-		cancel_if_invalid = no
-		ai_will_do = { factor = 10 }
+	relative_position_id = generic_infrastructure_effort_4
+		prerequisite = {	focus = generic_infrastructure_effort_4	
 	}
-
 }

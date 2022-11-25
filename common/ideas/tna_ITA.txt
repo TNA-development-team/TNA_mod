@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		ITA_go_right_idea ={	#‰EŒX‰»
+		ITA_go_right_idea ={	#å³å‚¾åŒ–
 			allowed = {	original_tag = ITA	}
 			allowed_civil_war = {	always = no	}
 			removal_cost = -1

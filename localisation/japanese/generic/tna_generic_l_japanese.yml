@@ -1,0 +1,60 @@
+﻿l_japanese:
+#国家方針
+ generic_industrial_effort:0 "産業に注力"
+ generic_industrial_effort_desc:0 "TODO"
+ generic_infrastructure_effort_1:0 "インフラへの注力 I"
+ generic_infrastructure_effort_1_desc:0 "TODO"
+ generic_construction_effort_1:0 "建設への注力 I"
+ generic_construction_effort_1_desc:0 "TODO"
+ generic_production_effort_1:0 "軍備への注力 I"
+ generic_production_effort_1_desc:0 "TODO"
+ generic_dockyard_effort_1:0 "造船への注力 I"
+ generic_dockyard_effort_1_desc:0 "TODO"
+ generic_airfield_expansion_1:0 "航空基地の拡張 I"
+ generic_airfield_expansion_1_desc:0 "TODO"
+ generic_research_effort_1:0 "研究への注力 I"
+ generic_research_effort_1_desc:0 "TODO"
+ generic_infrastructure_effort_2:0 "インフラへの注力 II"
+ generic_infrastructure_effort_2_desc:0 "TODO"
+ generic_construction_effort_2:0 "建設への注力 II"
+ generic_construction_effort_2_desc:0 "TODO"
+ generic_production_effort_2:0 "軍備への注力 II"
+ generic_production_effort_2_desc:0 "TODO"
+ generic_dockyard_effort_2:0 "造船への注力 II"
+ generic_dockyard_effort_2_desc:0 "TODO"
+ generic_airfield_expansion_2:0 "航空基地の拡張 II"
+ generic_airfield_expansion_2_desc:0 "TODO"
+ generic_research_effort_2:0 "研究への注力 II"
+ generic_research_effort_2_desc:0 "TODO"
+ generic_infrastructure_effort_3:0 "インフラへの注力 III"
+ generic_infrastructure_effort_3_desc:0 "TODO"
+ generic_construction_effort_3:0 "建設への注力 III"
+ generic_construction_effort_3_desc:0 "TODO"
+ generic_production_effort_3:0 "軍備への注力 III"
+ generic_production_effort_3_desc:0 "TODO"
+ generic_dockyard_effort_3:0 "造船への注力 III"
+ generic_dockyard_effort_3_desc:0 "TODO"
+ generic_airfield_expansion_3:0 "航空基地の拡張 III"
+ generic_airfield_expansion_3_desc:0 "TODO"
+ generic_research_effort_3:0 "研究への注力 III"
+ generic_research_effort_3_desc:0 "TODO"
+ generic_research_institutions_expansion_1:0 "研究機関の拡張 I"
+ generic_research_institutions_expansion_1_desc:0 "TODO"
+ generic_infrastructure_effort_4:0 "インフラへの注力 IV"
+ generic_infrastructure_effort_4_desc:0 "TODO"
+ generic_research_institutions_expansion_2:0 "研究機関の拡張 II"
+ generic_research_institutions_expansion_2_desc:0 "TODO"
+ 
+#国民精神
+
+#ディシジョン
+ 
+
+#イベント
+
+#ツールチップ
+ generic_infrastructure_effort_tt:0 ""
+ generic_construction_effort_tt:0 ""
+ generic_production_effort_tt:0 ""
+ 
+ generic_airfield_expansion_tt:0 ""
