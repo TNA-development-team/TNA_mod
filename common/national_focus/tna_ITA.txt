@@ -41,3 +41,18 @@ shared_focus = {	#右傾化
 	relative_position_id = ITA_1908_strategy
 	prerequisite = {	focus = ITA_1908_strategy	}
 }
+	shared_focus = { #保守
+	id = ITA_go_senter
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	prerequisite =  {	focus = ITA_1908_strategy	}
+	mutually_exclusive = { focus = ITA_go_right }
+	
+}
