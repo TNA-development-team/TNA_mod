@@ -6,7 +6,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				rightist_democratic_drift = 0.1
+				rightist_democracy_drift = 0.1
 			}
 		}
 	}

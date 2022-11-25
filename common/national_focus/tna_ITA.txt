@@ -29,7 +29,7 @@ shared_focus = {	#右傾化
 	id = ITA_go_right
 	#icon = 
 	cost = 10
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -41,19 +41,31 @@ shared_focus = {	#右傾化
 	relative_position_id = ITA_1908_strategy
 	prerequisite = {	focus = ITA_1908_strategy	}
 }
+<<<<<<< HEAD
 	shared_focus = { #中道化
 	id = ITA_go_senter
 	cost = 10
 	x = 4
+=======
+
+shared_focus = { #保守
+	id = ITA_go_senter
+	cost = 10
+	x = 0
+>>>>>>> a014616825ca45580c5cc2ca9e1b99ce685ee556
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
+<<<<<<< HEAD
 		set_political_party = {
 			ideology = centrist_democracy
 			popularity = 10
 			}
+=======
+		log = "[GetDateText]: [Root.GetName]: Focus ITA_go_senter"
+>>>>>>> a014616825ca45580c5cc2ca9e1b99ce685ee556
 	}
 	prerequisite =  {	focus = ITA_1908_strategy	}
 	mutually_exclusive = { focus = ITA_go_right }
