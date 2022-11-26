@@ -7,7 +7,9 @@ focus_tree = {
 			tag = ITA
 		}
 	}
+	shared_focus = ITA_industrial_effort
 	shared_focus = ITA_1908_strategy
+	continuous_focus_position = { x = 50 y = 2050 }
 }
 shared_focus = {	#産業への注力
 	id = ITA_industrial_effort
@@ -26,7 +28,6 @@ shared_focus = {	#産業への注力
 		}
 	}
 }
-
 shared_focus = {	#インフラへの注力 I
 	id = ITA_infrastructure_effort_1
 	icon = GFX_goal_ITA_construct_infrastructure
@@ -1019,7 +1020,6 @@ shared_focus = {	#造船への注力 III
 	relative_position_id = ITA_infrastructure_effort_3
 	prerequisite = {	focus = ITA_infrastructure_effort_3	}
 }
-
 shared_focus = {	#航空基地の拡張 III
 	id = ITA_airfield_expansion_3
 	icon = GFX_goal_ITA_construction
