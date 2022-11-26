@@ -40,11 +40,12 @@ shared_focus = {	#右傾化
 	}
 	relative_position_id = ITA_1908_strategy
 	prerequisite = {	focus = ITA_1908_strategy	}
+	mutually_exclusive = { focus = ITA_go_senter }
 }
 	shared_focus = { #中道化
 	id = ITA_go_senter
 	cost = 10
-	x = 4
+	x = 5
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -54,6 +55,9 @@ shared_focus = {	#右傾化
 			ideology = centrist_democracy
 			popularity = 10
 			}
+	}
+	completion_reward = {
+		add_ideas = ITA_go_senter_idea
 	}
 	prerequisite =  {	focus = ITA_1908_strategy	}
 	mutually_exclusive = { focus = ITA_go_right }

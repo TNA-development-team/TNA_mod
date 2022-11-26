@@ -9,5 +9,14 @@ ideas = {
 				rightist_democracy_drift = 0.1
 			}
 		}
+		ITA_go_senter_idea ={	#中道化
+			allowed = {	original_tag = ITA	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			
+			modifier = {
+				centrist_democracy_drift = 0.1
+			}
+		}
 	}
 }
