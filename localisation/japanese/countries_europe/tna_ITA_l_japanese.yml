@@ -4,13 +4,14 @@
  ITA_1908_strategy_desc:0 "TODO"
  ITA_go_right_idea:0 "右傾化"
  ITA_go_right_idea_desc:0 "TODO"
- ITA_go_senter:0 ""
+ ITA_go_senter:0 "中道化"
  ITA_go_senter_desc:0 "TODO"
  
 #国民精神
  ITA_go_right_idea:0 "右傾化"
  ITA_go_right_idea_desc:0 "TODO"
-
+ITA_go_senter_idea:0 "中道化"
+ITA_go_senter_idea_desc:0 "TODO"
 #ディシジョン
  
 

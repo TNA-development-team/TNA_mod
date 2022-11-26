@@ -18,5 +18,14 @@ ideas = {
 				centrist_democracy_drift = 0.1
 			}
 		}
+		ITA_go_left_idea ={	#左傾化
+			allowed = {	original_tag = ITA	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			
+			modifier = {
+				leftist_democracy_drift = 0.1
+			}
+		}
 	}
 }
