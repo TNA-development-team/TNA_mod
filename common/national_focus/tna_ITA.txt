@@ -14,7 +14,7 @@ shared_focus = {	#イタリア1908年戦略
 	id = ITA_1908_strategy
 	#icon = 
 	cost = 5
-	x = 3
+	x = 10
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -29,7 +29,7 @@ shared_focus = {	#右傾化
 	id = ITA_go_right
 	#icon = 
 	cost = 10
-	x = -2
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -45,7 +45,7 @@ shared_focus = {	#右傾化
 	shared_focus = { #中道化
 	id = ITA_go_senter
 	cost = 10
-	x = 5
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -59,7 +59,7 @@ shared_focus = {	#右傾化
 	shared_focus = { #左傾化
 	id = ITA_go_left
 	cost = 10
-	x = 3
+	x = 5
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -69,6 +69,73 @@ shared_focus = {	#右傾化
 	}
 	prerequisite =  {	focus = ITA_1908_strategy 	}
 	mutually_exclusive = { focus = ITA_go_right focus = ITA_go_senter }
-
-
+}
+shared_focus = {	#共和国
+	id = ITA_republic
+	#icon = 
+	cost = 10
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = rightist_democracy
+			popularity = 0.1
+			} 
+			set_politics = {
+				ruling_party = rightist_democracy
+			}
+	}
+	available = {  
+		rightist_democracy > 0.5
+	}
+	
+	relative_position_id = ITA_1908_strategy
+	prerequisite = {	focus = ITA_go_right	}
+}
+	shared_focus = { #王国
+	id = ITA_kingdom
+	cost = 10
+	x = 8
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = centrist_democracy
+			popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = centrist_democracy
+			}
+	}
+	available = {  
+		centrist_democracy > 0.5
+	}
+	prerequisite =  {	focus = ITA_go_senter	}
+}
+	shared_focus = { #社会主義
+	id = ITA_socialism
+	cost = 10
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = leftist_democracy
+			popularity = 0.1
+			}
+			set_politics = {
+				ruling_party = leftist_democracy
+			}
+	}
+	available = {  
+		leftist_democracy > 0.5
+	}
+	prerequisite =  {	focus = ITA_go_left 	}
 }
