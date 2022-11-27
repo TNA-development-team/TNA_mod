@@ -1,0 +1,21 @@
+state = {
+	id = 923
+	name = "STATE_923"
+	manpower = 476111
+	state_category = rural
+	
+	history = {
+		owner = ZAN
+		add_core_of = ZAN
+		buildings = {
+			infrastructure = 3
+			13263 = {	naval_base = 1	}
+		}
+		victory_points = {	13263	1	}
+	}
+	
+	provinces = {
+		13263
+	}
+	local_supplies = 0.0
+}
