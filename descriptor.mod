@@ -9,7 +9,7 @@ tags={
 	"Ideologies"
 	"Graphics"
 }
-name="The New Africa"
+name="The Era of Glorious Neutrality"
 replace_path="common/abilities"
 replace_path="common/ai_equipment"
 replace_path="common/ai_focuses"
