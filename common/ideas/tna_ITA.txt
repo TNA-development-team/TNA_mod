@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		ITA_go_right_idea ={	#右傾化
+			allowed = {	original_tag = ITA	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			
+			modifier = {
+				rightist_democracy_drift = 0.1
+			}
+		}
+		ITA_go_center_idea ={	#中道化
+			allowed = {	original_tag = ITA	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			
+			modifier = {
+				centrist_democracy_drift = 0.1
+			}
+		}
+		ITA_go_left_idea ={	#左傾化
+			allowed = {	original_tag = ITA	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			
+			modifier = {
+				leftist_democracy_drift = 0.1
+			}
+		}
+	}
+}

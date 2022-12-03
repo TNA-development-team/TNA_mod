@@ -7,7 +7,7 @@ state = {
 	resources = {	aluminium = 14	}
 	
 	history = {
-		owner = ITA
+		owner = AUS
 		add_core_of = AUS
 		add_claim_by = ITA
 		buildings = {

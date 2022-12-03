@@ -7,7 +7,7 @@ state = {
 	resources = {	steel = 100	}
 	
 	history = {
-		owner = FRA
+		owner = GER
 		add_core_of = GER
 		add_core_of = FRA
 		buildings = {
