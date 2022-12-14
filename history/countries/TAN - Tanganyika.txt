@@ -1,4 +1,3 @@
 capital = 546
 
-set_cosmetic_tag = COUNTRY_GER
 set_dictatorship = yes
