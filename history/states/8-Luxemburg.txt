@@ -7,7 +7,7 @@ state = {
 	resources = {	steel = 5	}
 	
 	history = {
-		owner = LUX
+		owner = BEL
 		add_core_of = BEL
 		add_core_of = LUX
 		buildings = {

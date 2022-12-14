@@ -5,7 +5,7 @@ state = {
 	state_category = town
 	
 	history = {
-		owner = GER
+		owner = POL
 		add_core_of = POL
 		add_core_of = GER
 		buildings = {
